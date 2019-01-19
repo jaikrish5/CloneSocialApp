@@ -1,0 +1,12 @@
+<form  action="{% if action_url %}{{action_url}}{% endif %}" method="post">
+{% csrf_token %}
+<!-- <textarea type="text" id="form7" class="md-textarea form-control" rows="3"> -->
+{{form.as_p}}
+<!-- </textarea> -->
+<input type="submit" name="" class="btn btn-primary" value="{{btn_title}}">
+</form>
+
+<!-- <div class="md-form">
+  <textarea type="text" id="form7" class="md-textarea form-control" rows="3"></textarea>
+  <label for="form7">Material textarea</label>
+</div> -->

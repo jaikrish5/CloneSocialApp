@@ -1,0 +1,22 @@
+{% extends "tweets/home.html" %}
+
+{%block body_block %}
+<div class="row">
+  <div class="col-sm-3" style='background-color:yellow;' >
+    <h1>{{tweet_detail.user}}</h1>
+
+  </div>
+  <div class="col-sm-9">
+    {{tweet_detail.content}}<br/>
+    {{tweet_detail.timestamp|timesince}}
+
+  </div>
+
+</div>
+
+{% endblock %}
+
+
+
+<!-- {{tweet_detail.content}}
+<p><a href="{% url "tweet:update" pk=tweet_detail.pk %}">update</a></p> -->

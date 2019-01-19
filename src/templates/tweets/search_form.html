@@ -1,0 +1,8 @@
+  <form class="navbar-form navbar-left" action='{% url "tweet:list" %}'  method="GET">
+    <div class="form-group">
+        <label for="q">Search</label>
+        <input class="fomr-control" type="text" name="q" placeholder='search' value="{{request.GET.q}}">
+    </div>
+  <input  class="btn btn-default" type="submit" name="" value="search">
+
+  </form>

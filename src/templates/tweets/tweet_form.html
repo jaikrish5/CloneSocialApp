@@ -1,0 +1,14 @@
+
+
+{% if not form.instance.pk %}
+create Tweet
+{% else %}
+Update Tweet
+{% endif %}
+
+<form class=""  method="post">
+  {% csrf_token %}
+  {{form.as_p}}
+  <input type="submit" name="" value="submit">
+
+</form>
